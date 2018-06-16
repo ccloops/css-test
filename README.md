@@ -8,7 +8,7 @@
 ## Directions -
 ### You'll be building this project from scratch. We've provided all of the files in your directory as far as images. 
 
-<img src="Capstone.png">
+![](capstone.png)
 
 ### Instructions
 #### 1. Clone this repository

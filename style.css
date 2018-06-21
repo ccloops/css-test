@@ -186,7 +186,7 @@ nav.mobile-view {
   text-decoration: underline;
 }
 
-.content a:active {
+.practice-content a:active {
   color: rgb(122, 184, 238);
   text-decoration: underline;
 }
@@ -225,6 +225,63 @@ nav.mobile-view {
   background-color: rgb(237, 230, 230);
 }
 
+.learning {
+  background-color: #F5F5F5;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.courses-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.courses-list {
+  display: none;
+}
+
+.course {
+  background-color: white;
+  width: 32%;
+  height: 16rem;
+  margin-bottom: 20px;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course h6 {
+  padding-bottom: 1rem;
+}
+
+.course p {
+  padding-top: .55rem;
+}
+
+.course-content {
+  padding: 16px 16px 24px 16px;
+}
+
+.course-content span {
+  font-size: .8rem;
+  color: gray;
+}
+
 footer {
   border-top: 1px solid rgb(237, 230, 230);
   /* background-color: white; */
@@ -249,7 +306,7 @@ nav {
   flex-grow: 1;
 }
 
-.footer-nav a {
+.nav-footer a {
   display: inline-block;
   padding-right: 16px;
   color: rgb(41, 40, 40);
@@ -257,11 +314,11 @@ nav {
   text-decoration: none;
 }
 
-.footer-nav a:hover {
+.nav-footer a:hover {
   color: rgb(102, 99, 99);
 }
 
-.footer-nav a:active {
+.nav-footer a:active {
   color: rgb(102, 99, 99);
 }
 
@@ -348,7 +405,7 @@ nav {
     margin-top: 24px;
   }
 
-  footer .footer-nav {
+  footer .nav-footer {
     display: none;
   }
 

@@ -3,90 +3,6 @@ body {
   font-size: 1em;
 }
 
-header {
-  height: 64px;
-}
-
-header img {
-  float: left;
-  margin-left: 24px;
-}
-
-header h1 {
-  font-size: 32px;
-  line-height: 1;
-  color: rgb(82, 77, 77);
-}
-
-span {
-  color: rgb(169, 163, 163);
-}
-
-header ul {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 30px;
-}
-
-header ul li {
-  list-style-type: none;
-  padding: 16px;
-  /* margin-bottom: 20px; */
-}
-
-header ul li:last-child {
-  margin-right: 24px;
-}
-
-#section-one img {
-  max-width: 60%;
-  margin: 32px 24px;
-  float: left;
-}
-
-#section-one {
-  background-color: #eee;
-  height: 500px;
-}
-
-#section-one h1 {
-  padding-top: 100px;
-}
-
-#section-one button {
-  color: white;
-  background-color: rgb(82, 77, 77);
-  padding: 8px 120px;
-  text-align: center;
-}
-
-#section-two {
-  max-width: 60%;
-  float: left;
-}
-
-#section-two div {
-  padding-left: 24px;
-  float: left;
-  /* max-width: 60%; */
-}
-
-#section-two img {
-  max-width: 100%;
-  margin: 32px 24px;
-}
-
-#section-three div {
-  max-width: 40%;
-}
-
-#section-three img {
-  max-width: 35%;
-  margin-left: 46px;
-  margin-top: 32px;
-  float: left;
-}
-
 h1, h2 {
   font-size: 2.10em;
   color: rgb(67, 61, 61);
@@ -127,11 +43,6 @@ header {
   height: 64px;
 }
 
-
-header {
-  background-color: white;
-}
-
 header .container {
   display: flex;
   justify-content: space-between;
@@ -166,37 +77,226 @@ nav {
   flex-grow: 1;
 }
 
-.desktop-nav a {
+.desktop-view a {
   display: inline-block;
   padding-right: 16px;
   font-size: 1em;
   text-decoration: none;
 }
 
-.desktop-nav a:hover {
+.desktop-view a:hover {
   color: rgb(67, 61, 61);
 }
 
-.desktop-nav a:active {
+.desktop-view a:active {
   color: rgb(67, 61, 61);
 }
 
-nav.mobile-nav {
+nav.mobile-view {
   display: none;
 }
 
+.main-banner {
+  background-color: rgb(245, 234, 234);
+  margin: 0 auto;
+}
+
+.main-banner .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.left-side img {
+  width: 100%;
+}
+
+.right-side {
+  width: 440px;
+}
+
+.title {
+  height: auto;
+  padding-left: 20px;
+  margin-right: 60px;
+  margin-top: 6em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title h4 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.title a {
+  background-color: rgb(97, 88, 88);
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.title a:hover {
+  background-color: rgb(97, 88, 88);
+}
+
+.title a:active {
+  background-color: rgb(97, 88, 88);
+}
+
+.practicing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side h2 {
+  padding-top: 32px;
+}
+
+.left-side p {
+  padding: 24px 24px 24px 0px;
+}
+
+.practice-content {
+  padding: 16px 1px 16px 0px;
+  width: 100%;
+}
+
+.practice-content p {
+  padding-top: 8px;
+}
+
+.practice-content a {
+  color: #4ba3f4;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding-top: .9rem;
+}
+
+.practice-content a:hover {
+  color: rgb(122, 184, 238);
+  text-decoration: underline;
+}
+
+.content a:active {
+  color: rgb(122, 184, 238);
+  text-decoration: underline;
+}
+
+.practicing .right-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-left: 1px solid rgb(237, 230, 230);
+  padding: 16px 0px 32px 0px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card img.desktop-view {
+  padding: 16px;
+  width: 35%;
+}
+
+.card img.mobile-view {
+  display: none;
+}
+
+.second-card {
+  border-top: 1px solid rgb(237, 230, 230);
+  border-bottom: 1px solid rgb(237, 230, 230);
+}
+
+.lecture {
+  background-color: rgb(237, 230, 230);
+}
+
 @media only screen and (max-width: 480px) {
-  nav.desktop-nav {
+  nav.desktop-view {
     display: none;
   }
   .logo {
     display: none;
   }
-  nav.mobile-nav {
+  nav.mobile-view {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 24px;
     padding-left: 24px;
+  }
+
+  .title a {
+    width: 100%;
+    background-color: rgb(67, 61, 61);
+    ;
+  }
+
+  .title a:hover {
+    opacity: .5;
+  }
+
+  .title a:active {
+    opacity: .5;
+  }
+
+  .practice-content .left-side {
+    display: none;
+  }
+
+  .practice-content .right-side {
+    border-left: 0px;
+    padding: 16px 16px 32px 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .lecture {
+    background-color: white;
+  }
+
+  .second-card {
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: 16px 0px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card img.desktop-view {
+    display: none;
+  }
+
+  .card img.mobile-view {
+    display: flex;
+    width: 100%;
+  }
+
+  .practice-content {
+    padding: 0px;
+    margin-top: 16px;
+    width: 100%;
   }
 }

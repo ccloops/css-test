@@ -1,6 +1,6 @@
 body {
-  width: 960px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
 }
 
 header {
@@ -61,10 +61,142 @@ header ul li:last-child {
 }
 
 #section-two {
+  max-width: 60%;
+  float: left;
+}
 
+#section-two div {
+  padding-left: 24px;
+  float: left;
+  /* max-width: 60%; */
 }
 
 #section-two img {
-  max-width: 60%;
+  max-width: 100%;
   margin: 32px 24px;
+}
+
+#section-three div {
+  max-width: 40%;
+}
+
+#section-three img {
+  max-width: 35%;
+  margin-left: 46px;
+  margin-top: 32px;
+  float: left;
+}
+
+h1, h2 {
+  font-size: 2.10em;
+  color: rgb(67, 61, 61);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h4, h6 {
+  font-size: 1.26em;
+  color: rgb(67, 61, 61);
+  font-weight: 500;
+}
+
+h4 {
+  line-height: 1.4em;
+}
+
+p {
+  font-size: .75em;
+  color: rgb(67, 61, 61);
+  font-weight: 400;
+  line-height: 1em;
+}
+
+span {
+  font-size: .70em;
+  color: rgb(67, 61, 61);
+  line-height: .94em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+
+header {
+  background-color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 2.75em;
+  padding-left: 24px;
+}
+
+#colmar {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#academy {
+  font-size: 1em;
+  font-weight: 400;
+  color: gray;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.desktop-nav a {
+  display: inline-block;
+  padding-right: 16px;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.desktop-nav a:hover {
+  color: rgb(67, 61, 61);
+}
+
+.desktop-nav a:active {
+  color: rgb(67, 61, 61);
+}
+
+nav.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  nav.desktop-nav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  nav.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
